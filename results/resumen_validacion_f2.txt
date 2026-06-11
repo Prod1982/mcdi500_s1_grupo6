@@ -1,0 +1,8 @@
+Resumen de validación Fase 2
+============================
+
+dataset_no_vacio: True
+duplicados: 0
+valores_nulos_totales: 0
+filas: 2000
+columnas: 17
