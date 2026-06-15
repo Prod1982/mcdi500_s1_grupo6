@@ -6,8 +6,6 @@ Clase orientada a objetos para encapsular
 el preprocesamiento del dataset.
 """
 
-from pathlib import Path
-
 import pandas as pd
 
 
@@ -18,13 +16,10 @@ class PreprocesadorAIJob:
     """
 
     def __init__(self, ruta_csv):
-
         self.ruta = ruta_csv
-
         self.df = None
 
     def cargar(self):
-
         """
         Carga el dataset desde un archivo CSV.
         """
@@ -40,25 +35,20 @@ class PreprocesadorAIJob:
         return self.df
 
     def explorar(self):
-
         """
-        Muestra información general.
+        Muestra información general del dataset.
         """
 
         print("\nPrimeros registros:")
-
         print(self.df.head())
 
         print("\nInformación:")
-
         print(self.df.info())
 
         print("\nValores nulos:")
-
         print(self.df.isnull().sum())
 
     def limpiar(self):
-
         """
         Elimina filas con valores nulos.
         """
@@ -77,7 +67,6 @@ class PreprocesadorAIJob:
         return self.df
 
     def validar(self):
-
         """
         Comprueba que no existan valores nulos.
         """
@@ -85,17 +74,13 @@ class PreprocesadorAIJob:
         nulos = self.df.isnull().sum().sum()
 
         if nulos == 0:
-
             print("Validación correcta.")
-
         else:
-
             print(f"Existen {nulos} valores nulos.")
 
         return nulos == 0
 
     def obtener_salarios(self):
-
         """
         Devuelve la columna salary_after_ai.
         """
@@ -103,9 +88,58 @@ class PreprocesadorAIJob:
         return self.df["salary_after_ai"].tolist()
 
     def resumen(self):
-
         """
         Devuelve estadísticas descriptivas.
         """
 
         return self.df.describe()
+
+
+class PreprocesadorAIJobAvanzado(PreprocesadorAIJob):
+    """
+    Clase que hereda de PreprocesadorAIJob e incorpora
+    funcionalidades adicionales para el análisis del
+    dataset AI Job Impact.
+    """
+
+    def __init__(self, ruta_csv):
+        super().__init__(ruta_csv)
+
+    def promedio_salario(self):
+        """
+        Calcula el salario promedio después de la adopción de IA.
+        """
+
+        return self.df["salary_after_ai"].mean()
+
+    def salario_maximo(self):
+        """
+        Obtiene el salario máximo después de la adopción de IA.
+        """
+
+        return self.df["salary_after_ai"].max()
+
+    def salario_minimo(self):
+        """
+        Obtiene el salario mínimo después de la adopción de IA.
+        """
+
+        return self.df["salary_after_ai"].min()
+
+    def filtrar_por_riesgo(self, riesgo):
+        """
+        Filtra los registros según el nivel de riesgo de automatización.
+        """
+
+        return self.df[
+            self.df["automation_risk"] == riesgo
+        ]
+
+    def filtrar_por_industria(self, industria):
+        """
+        Filtra los registros según la industria.
+        """
+
+        return self.df[
+            self.df["industry"] == industria
+        ]
