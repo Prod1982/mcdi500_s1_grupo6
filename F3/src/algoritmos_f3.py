@@ -97,10 +97,10 @@ class PreprocesadorAIJob:
     def obtener_salarios(self):
 
         """
-        Devuelve la columna Salary_After_AI.
+        Devuelve la columna salary_after_ai.
         """
 
-        return self.df["Salary_After_AI"].tolist()
+        return self.df["salary_after_ai"].tolist()
 
     def resumen(self):
 
