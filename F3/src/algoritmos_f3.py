@@ -1,73 +1,111 @@
 """
-Módulo de Programación Orientada a Objetos
-Proyecto MCDI500 - Fase 3
+MCDI500
+Proyecto: AI Job Impact
+
+Clase orientada a objetos para encapsular
+el preprocesamiento del dataset.
 """
 
-import timeit
+from pathlib import Path
+
+import pandas as pd
 
 
-class AIJobAnalyzer:
+class PreprocesadorAIJob:
     """
-    Clase encargada de encapsular operaciones de análisis
-    sobre el dataset AI Job Impact.
+    Clase encargada de administrar el dataset
+    del proyecto AI Job Impact.
     """
 
-    def __init__(self, dataframe):
-        """
-        Constructor.
+    def __init__(self, ruta_csv):
 
-        Parametros
-        ----------
-        dataframe : pandas.DataFrame
-            Dataset cargado.
-        """
+        self.ruta = ruta_csv
 
-        self.dataframe = dataframe
+        self.df = None
 
-    def obtener_salarios(self, cantidad=500):
+    def cargar(self):
+
         """
-        Obtiene una lista de salarios.
+        Carga el dataset desde un archivo CSV.
         """
 
-        return (
-            self.dataframe["salary_after_ai"]
-            .dropna()
-            .head(cantidad)
-            .tolist()
+        self.df = pd.read_csv(self.ruta)
+
+        print(
+            f"Dataset cargado correctamente: "
+            f"{self.df.shape[0]} filas y "
+            f"{self.df.shape[1]} columnas."
         )
 
-    def promedio_salario(self):
+        return self.df
 
-        return self.dataframe["salary_after_ai"].mean()
+    def explorar(self):
 
-    def salario_maximo(self):
+        """
+        Muestra información general.
+        """
 
-        return self.dataframe["salary_after_ai"].max()
+        print("\nPrimeros registros:")
 
-    def salario_minimo(self):
+        print(self.df.head())
 
-        return self.dataframe["salary_after_ai"].min()
+        print("\nInformación:")
 
-    def cantidad_registros(self):
+        print(self.df.info())
 
-        return len(self.dataframe)
+        print("\nValores nulos:")
 
-    def ordenar_python(self, cantidad=500):
+        print(self.df.isnull().sum())
 
-        datos = self.obtener_salarios(cantidad)
+    def limpiar(self):
 
-        return sorted(datos)
+        """
+        Elimina filas con valores nulos.
+        """
 
-    def medir_sorted(self, cantidad=500, repeticiones=5):
+        antes = len(self.df)
 
-        datos = self.obtener_salarios(cantidad)
+        self.df = self.df.dropna()
 
-        tiempo = timeit.timeit(
+        despues = len(self.df)
 
-            lambda: sorted(datos),
-
-            number=repeticiones
-
+        print(
+            f"Se eliminaron "
+            f"{antes - despues} registros con nulos."
         )
 
-        return tiempo
+        return self.df
+
+    def validar(self):
+
+        """
+        Comprueba que no existan valores nulos.
+        """
+
+        nulos = self.df.isnull().sum().sum()
+
+        if nulos == 0:
+
+            print("Validación correcta.")
+
+        else:
+
+            print(f"Existen {nulos} valores nulos.")
+
+        return nulos == 0
+
+    def obtener_salarios(self):
+
+        """
+        Devuelve la columna Salary_After_AI.
+        """
+
+        return self.df["Salary_After_AI"].tolist()
+
+    def resumen(self):
+
+        """
+        Devuelve estadísticas descriptivas.
+        """
+
+        return self.df.describe()
