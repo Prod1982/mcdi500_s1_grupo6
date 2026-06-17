@@ -4,9 +4,9 @@ Mediciones de complejidad - Fase 3
 Variable analizada: salary_after_ai
 Cantidad de registros evaluados: 500
 
-Tiempo insertion_sort: 0.09459449999849312
-Tiempo merge_sort: 0.022344700002577156
-Tiempo sorted(): 0.0006071999960113317
+Tiempo insertion_sort: 0.11008350001065992
+Tiempo merge_sort: 0.024394799998844974
+Tiempo sorted(): 0.002694999988307245
 
 Interpretación:
 Insertion sort fue el algoritmo más lento debido a su complejidad O(n²).
