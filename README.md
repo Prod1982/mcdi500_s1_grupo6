@@ -8,7 +8,7 @@
 
 
 
-Proyecto de Ciencia de Datos desarrollado para la asignatura MCDI500, , orientado al análisis del impacto de la Inteligencia Artificial en el empleo, la productividad y la capacitación laboral mediante técnicas de procesamiento y análisis de datos en Python.
+Proyecto de Ciencia de Datos desarrollado para la asignatura MCDI500, orientado al análisis del impacto de la Inteligencia Artificial en el empleo, la productividad y la capacitación laboral mediante técnicas de procesamiento, análisis de datos y diseño algorítmico en Python.
 
 Integrantes
 
@@ -72,7 +72,7 @@ notebooks/F2_pipeline_datos.ipynb
 
 ## Fase 3 - Algoritmos y medición de complejidad
 
-La Fase 3 implementa algoritmos estructurados y recursivos sobre el dataset procesado en la Fase 2, incorporando mediciones básicas de complejidad temporal, principios de programación orientada a objetos y herramientas de análisis exploratorio.
+La Fase 3 implementa algoritmos estructurados y recursivos en Python sobre el conjunto de datos AI Job Impact, incorporando principios de programación orientada a objetos, mediciones de complejidad temporal y análisis comparativos de desempeño.
 
 ### Notebook principal
 
@@ -84,15 +84,21 @@ notebooks/F3_algoritmos_complejidad.ipynb
 
 ### Contenido desarrollado
 
+- Carga del dataset y exploración inicial de la información.
+- Limpieza básica y transformación de columnas numéricas.
+- Validación posterior al procesamiento de los datos.
 - Implementación del algoritmo estructurado insertion_sort.
 - Implementación del algoritmo recursivo merge_sort.
+- Implementación de la función auxiliar combinar_listas.
 - Comparación de desempeño con la función optimizada sorted() de Python.
 - Medición de tiempos de ejecución mediante timeit.
-- Implementación de la clase PreprocesadorAIJob para encapsular el preprocesamiento del dataset.
-- Implementación de la clase PreprocesadorAIJobAvanzado utilizando herencia para ampliar las funcionalidades de análisis.
-- Validación, limpieza y exploración de los datos mediante métodos orientados a objetos.
-- Generación de un gráfico tipo boxplot para comparar la distribución de los salarios antes y después de la adopción de inteligencia artificial.
+- Implementación de la clase PreprocesadorAIJob para encapsular el procesamiento del dataset.
+- Implementación de la clase PreprocesadorAIJobAvanzado, utilizando herencia y sobrescritura de métodos para demostrar polimorfismo.
+- Obtención de estadísticas descriptivas y filtrado de información mediante programación orientada a objetos.
+- Generación de un gráfico tipo boxplot para analizar la distribución de salarios.
+- Generación de un gráfico comparativo de tiempos de ejecución entre insertion_sort, merge_sort y sorted().
 - Documentación técnica y análisis básico de eficiencia algorítmica.
+- Dependencias principales
 
 ### Dependencias principales
 
