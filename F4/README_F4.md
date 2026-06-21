@@ -83,9 +83,11 @@ Comunicación de hallazgos para informe y presentación final
 
 ## Visualizaciones generadas
 
-Durante la Fase 4 se generaron seis visualizaciones principales orientadas a comunicar hallazgos relevantes sobre salario, productividad, adopción de inteligencia artificial y riesgo de automatización.
+Durante la Fase 4 se generaron siete visualizaciones principales orientadas a comunicar hallazgos relevantes sobre salario, productividad, adopción de inteligencia artificial y riesgo de automatización.
 
 Estas visualizaciones permiten transformar los resultados técnicos en evidencia interpretable para el informe final y la presentación profesional del proyecto. Cada figura responde a una pregunta analítica específica y queda almacenada como archivo PNG dentro de la carpeta `F4/results`.
+
+Adicionalmente, se incorporó una visualización desarrollada con la biblioteca Seaborn para enriquecer el análisis exploratorio y fortalecer la comunicación de los resultados mediante una representación más detallada de la distribución de los datos.
 
 ### Figura 1 — Salario posterior a IA según nivel de adopción
 
@@ -135,6 +137,14 @@ Estas visualizaciones permiten transformar los resultados técnicos en evidencia
 
 ---
 
+### Figura 7 — Distribución del salario posterior a IA por nivel de adopción mediante gráfico tipo violin (Seaborn)
+
+**Archivo:** `F4/results/figura_7_violin_salario_por_adopcion.png`
+
+**Propósito:** representar la distribución completa del salario posterior a la adopción de inteligencia artificial para cada nivel de adopción utilizando un gráfico tipo *violin plot* implementado con la biblioteca Seaborn. Esta visualización permite apreciar simultáneamente la densidad, dispersión y tendencia central de los datos, complementando el análisis realizado mediante boxplots tradicionales y fortaleciendo la interpretación de los resultados.
+
+---
+
 ## Evidencias generadas
 
 Durante esta fase se generaron las siguientes evidencias:
@@ -148,6 +158,7 @@ Durante esta fase se generaron las siguientes evidencias:
 | `figura_4_distribucion_salario_after_ai.png` | `F4/results/` | Analizar la distribución general del salario posterior a IA. |
 | `figura_5_promedio_salario_por_adopcion.png` | `F4/results/` | Comparar salario promedio posterior a IA por nivel de adopción. |
 | `figura_6_salario_antes_vs_despues_por_riesgo.png` | `F4/results/` | Explorar la relación entre salario antes y después de IA según riesgo de automatización. |
+| `figura_7_violin_salario_por_adopcion.png` | `F4/results/` | Visualizar la distribución completa del salario posterior a IA por nivel de adopción mediante un gráfico tipo violin implementado con Seaborn. |
 | `resumen_hallazgos_f4.txt` | `F4/results/` | Registrar interpretación preliminar de los principales hallazgos. |
 | `metricas_validacion_f4.txt` | `F4/results/` | Registrar métricas técnicas de validación del dataset y resultados. |
 | `documentacion_arquitectura_f4.txt` | `F4/results/` | Documentar entradas, proceso, salidas y trazabilidad de la fase. |
@@ -266,7 +277,7 @@ La Fase 4 cuenta actualmente con:
 
 - estructura de carpetas creada;
 - notebook ejecutable;
-- seis visualizaciones generadas;
+- siete visualizaciones generadas, incluyendo una visualización adicional desarrollada con Seaborn;
 - resumen de hallazgos;
 - métricas de validación técnica;
 - documentación arquitectónica;
@@ -279,4 +290,4 @@ La Fase 4 cuenta actualmente con:
 
 ## Conclusión
 
-La Fase 4 consolida el cierre técnico del proyecto mediante visualizaciones, validación, documentación reproducible y comunicación de hallazgos. Esta etapa permite vincular los resultados técnicos con la problemática central del proyecto: el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral.
+La Fase 4 consolida el cierre técnico del proyecto mediante visualizaciones, validación, documentación reproducible y comunicación de hallazgos. La incorporación de una visualización adicional desarrollada con Seaborn fortalece el análisis exploratorio y el storytelling del proyecto, permitiendo representar con mayor detalle la distribución de los salarios posteriores a la adopción de inteligencia artificial. En conjunto, esta etapa integra los resultados obtenidos en las fases anteriores y entrega evidencia técnica clara, verificable y reproducible sobre el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral. Esta etapa permite vincular los resultados técnicos con la problemática central del proyecto: el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral.
