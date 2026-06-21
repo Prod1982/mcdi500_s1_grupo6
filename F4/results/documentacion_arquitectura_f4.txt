@@ -1,0 +1,43 @@
+
+Documentación arquitectónica - Fase 4
+=====================================
+
+Objetivo:
+La Fase 4 consolida el cierre integrador del proyecto, articulando el dataset limpio generado en Fase 2, el núcleo algorítmico y modular desarrollado en Fase 3, y las visualizaciones analíticas orientadas a comunicar hallazgos relevantes.
+
+Entradas:
+- data/processed/ai_job_impact_clean.csv
+- F3/src/algoritmos_f3.py
+- F3/results/mediciones_complejidad_f3.txt
+- F3/results/comparacion_tiempos_f3.png
+
+Proceso:
+1. Carga del dataset limpio.
+2. Validación de estructura, nulos, duplicados y variable objetivo.
+3. Construcción de visualizaciones analíticas.
+4. Exportación de figuras a F4/results.
+5. Registro de resumen de hallazgos.
+6. Registro de métricas de validación técnica.
+
+Salidas:
+- F4/results/figura_1_salario_por_adopcion_ia.png
+- F4/results/figura_2_productividad_por_riesgo.png
+- F4/results/figura_3_correlaciones_laborales.png
+- F4/results/resumen_hallazgos_f4.txt
+- F4/results/metricas_validacion_f4.txt
+
+Arquitectura:
+Fase 2 entrega el dataset limpio.
+Fase 3 entrega el núcleo algorítmico, validación de complejidad, POO y resultados de eficiencia.
+Fase 4 integra los resultados previos, construye visualizaciones y comunica hallazgos para el cierre técnico del proyecto.
+
+Criterio de trazabilidad:
+Cada salida generada queda almacenada en F4/results y puede ser vinculada directamente con el notebook F4_visualizacion_validacion_cierre.ipynb.
+
+Buenas prácticas aplicadas:
+- Uso de rutas reproducibles mediante pathlib.
+- Separación de carpetas por fase.
+- Validaciones con assert.
+- Exportación persistente de resultados.
+- Documentación narrativa en notebook.
+- Control de versiones mediante Git y GitHub.
