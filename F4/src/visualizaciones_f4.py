@@ -13,7 +13,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import seaborn as sns
 
 def graficar_salario_por_adopcion(
     df: pd.DataFrame,
@@ -297,3 +297,53 @@ def graficar_salario_antes_vs_despues_por_riesgo(
     plt.close(fig)
 
     return ruta_salida
+    
+def graficar_violin_salario_por_adopcion(
+    df: pd.DataFrame,
+    ruta_salida: Path
+) -> Path:
+    """
+    Genera un gráfico tipo violin utilizando Seaborn para mostrar
+    la distribución del salario posterior a IA según el nivel de adopción.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Dataset limpio del proyecto.
+    ruta_salida : Path
+        Ruta donde se guardará la figura PNG.
+
+    Returns
+    -------
+    Path
+        Ruta del archivo generado.
+    """
+
+    fig, ax = plt.subplots(figsize=(9, 6))
+
+    sns.violinplot(
+        data=df,
+        x="ai_adoption_level",
+        y="salary_after_ai",
+        inner="box",
+        ax=ax
+    )
+
+    ax.set_title(
+        "Distribución del salario posterior según nivel de adopción de IA"
+    )
+    ax.set_xlabel("Nivel de adopción de IA")
+    ax.set_ylabel("Salario posterior a IA")
+
+    ruta_salida.parent.mkdir(parents=True, exist_ok=True)
+
+    plt.savefig(
+        ruta_salida,
+        dpi=300,
+        bbox_inches="tight"
+    )
+
+    plt.close(fig)
+
+    return ruta_salida
+    
