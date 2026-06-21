@@ -11,5 +11,14 @@ Esta visualización permite analizar si los niveles de riesgo de automatización
 Figura 3: Correlaciones entre variables laborales numéricas
 El mapa de correlaciones permite examinar asociaciones lineales entre variables como edad, experiencia, salarios, horas de trabajo, satisfacción laboral y productividad.
 
+Figura 4: Distribución del salario posterior a IA
+Esta figura entrega una mirada general de la variable salary_after_ai, permitiendo identificar concentración, dispersión y posibles asimetrías en los salarios posteriores a la adopción de IA.
+
+Figura 5: Salario promedio posterior a IA por nivel de adopción
+Esta figura resume el salario promedio por categoría de adopción tecnológica, facilitando una comparación directa entre niveles de adopción de inteligencia artificial.
+
+Figura 6: Salario antes vs. después de IA según riesgo de automatización
+Esta visualización permite observar la relación entre salario antes y después de IA, incorporando el riesgo de automatización como dimensión interpretativa.
+
 Conclusión preliminar:
-Las visualizaciones fortalecen la comunicación de hallazgos al vincular el análisis técnico con la problemática central del proyecto: el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral.
+Las visualizaciones fortalecen la comunicación de hallazgos al vincular el análisis técnico con la problemática central del proyecto: el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral. La incorporación de visualizaciones adicionales mejora la narrativa analítica, ya que permite avanzar desde la distribución general de los datos hacia comparaciones por grupos y relaciones entre variables laborales relevantes.
