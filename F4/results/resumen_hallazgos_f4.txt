@@ -1,0 +1,15 @@
+
+Resumen de hallazgos visuales - Fase 4
+======================================
+
+Figura 1: Salario posterior a IA según nivel de adopción
+Esta visualización permite comparar la distribución salarial entre distintos niveles de adopción de inteligencia artificial, observando diferencias en mediana, dispersión y posibles valores atípicos.
+
+Figura 2: Cambio de productividad según riesgo de automatización
+Esta visualización permite analizar si los niveles de riesgo de automatización se asocian con diferencias en el cambio de productividad reportado.
+
+Figura 3: Correlaciones entre variables laborales numéricas
+El mapa de correlaciones permite examinar asociaciones lineales entre variables como edad, experiencia, salarios, horas de trabajo, satisfacción laboral y productividad.
+
+Conclusión preliminar:
+Las visualizaciones fortalecen la comunicación de hallazgos al vincular el análisis técnico con la problemática central del proyecto: el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral.

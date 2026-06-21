@@ -1,0 +1,15 @@
+Métricas de validación técnica - Fase 4
+=======================================
+
+filas_dataset: 2000
+columnas_dataset: 17
+valores_nulos_totales: 0
+registros_duplicados: 0
+existe_variable_objetivo_salary_after_ai: True
+figura_1_generada: True
+figura_2_generada: True
+figura_3_generada: True
+resumen_hallazgos_generado: True
+
+Interpretación:
+Las métricas confirman que el dataset mantiene consistencia estructural, sin valores nulos ni duplicados, y que las visualizaciones principales fueron generadas correctamente en la carpeta F4/results.
