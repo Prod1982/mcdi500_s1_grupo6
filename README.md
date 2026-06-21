@@ -45,18 +45,27 @@ Integrantes
 
 \- Matplotlib
 
+\- Seaborn
+
 
 \## Estructura
 
 
-
-\- data
-
-\- notebooks
-
-\- docs
-
-\- results
+mcdi500_s1_grupo6/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── F3/
+│   ├── notebooks/
+│   ├── src/
+│   └── results/
+├── F4/
+│   ├── notebooks/
+│   ├── src/
+│   └── results/
+├── docs/
+├── requirements.txt
+└── README.md
 
 ## Fase 2 - Pipeline de datos
 
@@ -74,6 +83,29 @@ notebooks/F2_pipeline_datos.ipynb
 
 La Fase 3 implementa algoritmos estructurados y recursivos en Python sobre el conjunto de datos AI Job Impact, incorporando principios de programación orientada a objetos, mediciones de complejidad temporal y análisis comparativos de desempeño.
 
+## Fase 4 - Visualización, validación y comunicación de resultados
+
+La Fase 4 consolida el cierre integrador del proyecto mediante la construcción de visualizaciones analíticas, validación técnica del dataset, documentación arquitectónica y comunicación de hallazgos relevantes sobre el impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral.
+
+
+### Notebook principal
+
+El notebook de esta fase se encuentra en:
+
+```text
+F4/notebooks/F4_visualizacion_validacion_cierre.ipynb
+```
+
+### Contenido desarrollado
+
+- Validación estructural del dataset limpio generado en la Fase 2.
+- Construcción de visualizaciones analíticas utilizando Matplotlib y Seaborn.
+- Generación de boxplots, histogramas, gráficos de barras, gráficos de dispersión y gráficos tipo violin.
+- Análisis de correlaciones entre variables laborales relevantes.
+- Exportación automática de figuras en formato PNG.
+- Generación de métricas de validación técnica y reporte integrado.
+- Documentación arquitectónica y trazabilidad metodológica entre las distintas fases del proyecto.
+- Elaboración de un resumen de hallazgos para apoyar la interpretación de resultados y fortalecer el storytelling del análisis.
 ### Notebook principal
 
 El notebook de esta fase se encuentra en:
@@ -106,6 +138,13 @@ notebooks/F3_algoritmos_complejidad.ipynb
 - Pandas
 - NumPy
 - Matplotlib
+- Seaborn
 - JupyterLab
 - timeit
 - pathlib
+
+## Resumen del proyecto
+
+El proyecto integra técnicas de ciencia de datos desarrolladas progresivamente a lo largo de cuatro fases. Inicialmente se definió la problemática y la estructura reproducible del trabajo, posteriormente se realizó el procesamiento y validación del conjunto de datos, se implementaron algoritmos estructurados y recursivos junto con principios de programación orientada a objetos y mediciones de complejidad, y finalmente se desarrollaron visualizaciones y documentación técnica que permiten comunicar los principales hallazgos de manera clara y reproducible.
+
+El resultado es un proyecto modular, documentado y versionado mediante Git y GitHub, orientado al análisis del impacto de la inteligencia artificial en el empleo, la productividad y la capacitación laboral.
