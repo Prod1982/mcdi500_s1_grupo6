@@ -1,0 +1,23 @@
+
+Trazabilidad metodológica F1-F4
+===============================
+
+Fase 1:
+- Avance técnico: Definición del problema, pregunta de investigación, objetivos y estructura inicial del repositorio.
+- Evidencia: notebooks/F1_Definicion.ipynb.
+- Mejora aplicada: Organización inicial del proyecto y documentación reproducible.
+
+Fase 2:
+- Avance técnico: Limpieza, transformación y validación del dataset AI Job Impact.
+- Evidencia: data/processed/ai_job_impact_clean.csv.
+- Mejora aplicada: Generación de dataset limpio sin nulos ni duplicados.
+
+Fase 3:
+- Avance técnico: Implementación de algoritmos, medición de complejidad, POO, Strategy/Factory y validación.
+- Evidencia: F3/src/algoritmos_f3.py, F3/results/mediciones_complejidad_f3.txt, F3/results/comparacion_tiempos_f3.png.
+- Mejora aplicada: Modularización del código, encapsulamiento, herencia, polimorfismo y comparación empírica de rendimiento.
+
+Fase 4:
+- Avance técnico: Visualización, validación final, documentación arquitectónica y comunicación de hallazgos.
+- Evidencia: F4/notebooks/F4_visualizacion_validacion_cierre.ipynb, F4/results/.
+- Mejora aplicada: Narrativa de datos, visualizaciones exportables, trazabilidad y preparación del cierre integrador.

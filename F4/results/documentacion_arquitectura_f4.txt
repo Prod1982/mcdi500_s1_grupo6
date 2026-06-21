@@ -18,18 +18,23 @@ Proceso:
 4. Exportación de figuras a F4/results.
 5. Registro de resumen de hallazgos.
 6. Registro de métricas de validación técnica.
+7. Documentación de la arquitectura y trazabilidad metodológica.
 
 Salidas:
 - F4/results/figura_1_salario_por_adopcion_ia.png
 - F4/results/figura_2_productividad_por_riesgo.png
 - F4/results/figura_3_correlaciones_laborales.png
+- F4/results/figura_4_distribucion_salario_after_ai.png
+- F4/results/figura_5_promedio_salario_por_adopcion.png
+- F4/results/figura_6_salario_antes_vs_despues_por_riesgo.png
 - F4/results/resumen_hallazgos_f4.txt
 - F4/results/metricas_validacion_f4.txt
+- F4/results/documentacion_arquitectura_f4.txt
 
 Arquitectura:
 Fase 2 entrega el dataset limpio.
-Fase 3 entrega el núcleo algorítmico, validación de complejidad, POO y resultados de eficiencia.
-Fase 4 integra los resultados previos, construye visualizaciones y comunica hallazgos para el cierre técnico del proyecto.
+Fase 3 entrega el núcleo algorítmico, validación de complejidad, POO, patrones Strategy/Factory y resultados de eficiencia.
+Fase 4 integra los resultados previos, construye visualizaciones, valida evidencias y comunica hallazgos para el cierre técnico del proyecto.
 
 Criterio de trazabilidad:
 Cada salida generada queda almacenada en F4/results y puede ser vinculada directamente con el notebook F4_visualizacion_validacion_cierre.ipynb.
@@ -41,3 +46,4 @@ Buenas prácticas aplicadas:
 - Exportación persistente de resultados.
 - Documentación narrativa en notebook.
 - Control de versiones mediante Git y GitHub.
+- Modularización progresiva en F4/src.

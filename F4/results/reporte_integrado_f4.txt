@@ -1,8 +1,8 @@
-Métricas de validación técnica - Fase 4
-=======================================
+Reporte integrado de cierre - Fase 4
+====================================
 
-Validación del dataset
-----------------------
+1. Métricas del dataset
+-----------------------
 filas_dataset: 2000
 columnas_dataset: 17
 valores_nulos_totales: 0
@@ -12,8 +12,8 @@ existe_variable_objetivo: True
 cumple_filas_esperadas: True
 cumple_columnas_esperadas: True
 
-Validación de archivos generados
---------------------------------
+2. Evidencias generadas
+-----------------------
 figura_1_salario_por_adopcion_ia.png: True
 figura_2_productividad_por_riesgo.png: True
 figura_3_correlaciones_laborales.png: True
@@ -24,5 +24,6 @@ resumen_hallazgos_f4.txt: True
 metricas_validacion_f4.txt: True
 documentacion_arquitectura_f4.txt: True
 
-Interpretación:
-Las métricas confirman la consistencia estructural del dataset, la ausencia de valores nulos y duplicados, la existencia de la variable objetivo salary_after_ai y la generación de evidencias persistentes en F4/results.
+3. Síntesis metodológica
+------------------------
+La Fase 4 integra los resultados técnicos del proyecto mediante validación, visualización, documentación arquitectónica y comunicación de hallazgos. Esta etapa permite conectar los avances de F1, F2 y F3 con un cierre reproducible y orientado a resultados.
